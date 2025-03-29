@@ -1,0 +1,200 @@
+.home-container {
+  width: 640px;  /* Fixed width to match Quiz.css */
+  margin: auto;  /* Centering the content */
+  padding: 20px;
+  background: whitesmoke;
+  color: #262626;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: white;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2rem;
+}
+
+.hero p {
+  font-size: 1rem;
+}
+
+.cta-button {
+  background: #ffcc00;
+  color: black;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background: #ff9900;
+}
+
+/* Categories */
+.categories h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);  /* Two columns for better spacing */
+  gap: 20px;
+  justify-content: center;
+}
+
+.category-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.category-card .icon {
+  font-size: 2rem;
+}
+
+.play-button {
+  background: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.play-button:hover {
+  background: #0056b3;
+}
+
+/* IQ Test Special Section */
+.iq-test-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; /* Adjust height to center properly */
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* IQ Test Card */
+.iq-test-card {
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 30px rgba(110, 142, 251, 0.5);
+  text-align: center;
+  width: 350px;
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+}
+
+/* Hover Effect */
+.iq-test-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 12px 40px rgba(167, 119, 227, 0.6);
+}
+
+/* Brain Icon Animation */
+.iq-icon {
+  font-size: 4rem;
+  display: block;
+  margin-bottom: 10px;
+  animation: pulse 1.5s infinite alternate ease-in-out;
+}
+
+/* Pulsating Effect */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.1); }
+}
+
+/* Special IQ Test Button */
+.iq-play-button {
+  background: linear-gradient(90deg, #ffcc00, #ff6600);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.iq-play-button:hover {
+  background: linear-gradient(90deg, #ff9900, #ff3300);
+  transform: scale(1.1);
+}
+
+/* Special Category Card for IQ Test */
+.special-iq {
+  border: 2px solid #ffcc00 !important;
+  background: linear-gradient(135deg, #6e8efb, #a777e3) !important;
+  color: white !important;
+}
+
+.special-iq .play-button {
+  background: #ffcc00 !important;
+  color: black !important;
+}
+
+.special-iq:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 8px 16px rgba(255, 204, 0, 0.5);
+}
+
+
+
+
+/* Coming Soon Section */
+.coming-soon {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.coming-card {
+  background: #eee;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 5px;
+  display: inline-block;
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 700px) {
+  .home-container {
+      width: 90%;  /* Allow some flexibility on smaller screens */
+  }
+}
